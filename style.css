@@ -129,7 +129,7 @@ header .container {
   position: relative;
 }
 
-.project-managment{
+.project-managment, .work-together{
     background-color: white;
     height: 760px;
     display: flex;
@@ -137,11 +137,11 @@ header .container {
     align-items: center;
 }
 
-.project-managment .text-block{
+.project-managment .text-block , .work-together .text-block{
     max-width: 672px;
 }
 
-.project-managment .container{
+.project-managment .container , .work-together .container{
     display: flex;
     gap: 60px;
     align-items: center;
@@ -153,6 +153,7 @@ header .container {
     height: 547px;
 }
 
-.project-managment h2 , .project-managment p{
+.project-managment h2 , .project-managment p , .work-together h2, .work-together p{
     color: #212529;
 }
+
