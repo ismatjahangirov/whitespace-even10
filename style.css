@@ -127,33 +127,158 @@ header .container {
 
 .heading {
   position: relative;
+  width: max-content;
 }
 
-.project-managment, .work-together{
-    background-color: white;
-    height: 760px;
+.project-managment,
+.work-together {
+  background-color: white;
+  height: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-managment .text-block,
+.work-together .text-block {
+  max-width: 672px;
+}
+
+.project-managment .container,
+.work-together .container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-managment .img-block {
+  width: 748px;
+  height: 547px;
+}
+
+.project-managment h2,
+.project-managment p,
+.work-together h2,
+.work-together p {
+  color: #212529;
+}
+
+.choose-plan {
+  background-color: white;
+  height: 1272px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-plan .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-managment .text-block , .work-together .text-block{
-    max-width: 672px;
-}
-
-.project-managment .container , .work-together .container{
-    display: flex;
+    flex-direction: column;
     gap: 60px;
+}
+
+.choose-plan h2,
+.choose-plan p {
+  text-align: center;
+  max-width: 979px;
+  margin: 0 auto;
+  color: #212529;
+}
+
+.choose-plan .heading {
+  margin: 0 auto 24px;
+}
+
+.subscriptions{
+    display: flex;
+    gap: 32px;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.project-managment .img-block{
-    width: 748px;
-    height: 547px;
+.free , .organization {
+  width: 472px;
+  height: 634px;
+  padding: 40px;
+  border: 1px solid #ffe492;
+  border-radius: 10px;
 }
 
-.project-managment h2 , .project-managment p , .work-together h2, .work-together p{
-    color: #212529;
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
+.price span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.price span:nth-child(2) {
+  font-size: 36px;
+  font-weight: 800;
+  color: #212529;
+}
+
+.price span:nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.free , .personal , .organization {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.free ul,
+.personal ul , .organization ul{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  list-style: none;
+}
+.free ul li , .organization li{
+  font-size: 16px;
+  color: #212529;
+}
+
+.free button, .organization button {
+  width: 166px;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid #ffe492;
+  border-radius: 8px;
+}
+
+.personal {
+  background-color: #043873;
+  width: 472px;
+  height: 761px;
+  padding: 80px 40px;
+}
+
+.personal .price span {
+  color: white;
+}
+
+.personal .price span:nth-child(2) {
+  color: #ffe492;
+}
+
+.personal ul li {
+  color: white;
+}
+
+.personal button {
+  width: 166px;
+  height: 51px;
+  background-color: #4f9cf9;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
